@@ -9,6 +9,8 @@ namespace FifteenPuzzle
 {
     internal static class Move
     {
+        public record ValidMove(int Col, int Row, int Value, Direction Direction);
+
         public static int ValidMoveChoice(int moveLength, string choice)
         {
             if(int.TryParse(choice, out _))

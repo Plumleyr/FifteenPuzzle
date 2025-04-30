@@ -8,8 +8,6 @@ namespace FifteenPuzzle
 {
     public static class Game
     {
-        public record ValidMove(int Col, int Row, int Value, Direction Direction);
-
         public static void Run()
         {
             Console.WriteLine("Welcome to puzzle time. Can we get your name?");
