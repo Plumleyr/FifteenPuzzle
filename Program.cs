@@ -1,0 +1,3 @@
+﻿using FifteenPuzzle;
+
+Game.Run();
