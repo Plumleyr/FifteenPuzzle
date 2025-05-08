@@ -21,7 +21,7 @@ namespace FifteenPuzzle
             do
             {
                 board.ShuffleTiles();
-            } while (BoardUtils.IsSolvable(board.Tiles));
+            } while (!BoardUtils.IsSolvable(board.Tiles));
 
             int choice;
             do

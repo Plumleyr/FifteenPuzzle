@@ -13,17 +13,17 @@ namespace FifteenPuzzle
             while (true)
             {
                 Console.WriteLine($"What size board would you like, {player.Name}?");
-                Console.WriteLine("1: 3x3\n2: 4x4\n3: 5x5");
-                Console.Write("Enter your choice (1-3): ");
+                Console.WriteLine("0: 3x3\n1: 4x4\n2: 5x5");
+                Console.Write("Enter your choice (0-2): ");
 
                 string input = Console.ReadLine() ?? "";
                 switch (input)
                 {
-                    case "1":
+                    case "0":
                         return (3, 3);
-                    case "2":
+                    case "1":
                         return (4, 4);
-                    case "3":
+                    case "2":
                         return (5, 5);
                     default:
                         Console.WriteLine("Invalid choice. Please enter 1, 2, or 3.");
